@@ -13,6 +13,17 @@ var program = require('optimist')
         string: true,
         description: 'input url'
     })
+    .options('phantomjs', {
+        alias: 'p',
+        string: true,
+        description: 'phantomjs executable path',
+        default: 'phantomjs'
+    })
     .demand(['input'])
     .argv;
 
+var check = require('./lib/check-console');
+check({
+    url: program.input,
+    phantomjs: program.phantomjs
+});
