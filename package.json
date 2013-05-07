@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Quickly loads remote url in phantomjs to check of JavaScript console errors",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "gitHead": "983daf4827399a19ed85742927c0bf3775c47d5d",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "optimist": "~0.4.0"
+  }
 }
