@@ -1,11 +1,11 @@
 {
   "name": "clean-console",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Quickly loads remote url in phantomjs to check of JavaScript console errors",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gt test/e2e.js",
     "basic": "node index.js -i examples/basic/index.html"
   },
   "repository": {
@@ -25,5 +25,8 @@
   "dependencies": {
     "optimist": "~0.4.0",
     "check-types": "~0.6.3"
+  },
+  "devDependencies": {
+    "gt": "~0.8.5"
   }
 }
