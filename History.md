@@ -1,3 +1,10 @@
+
+0.0.4 / 2013-10-21
+==================
+
+  * assuming http:// by default
+  * grabbing default url from command line
+
 0.0.3 / 2013-10-21
 ==================
 
