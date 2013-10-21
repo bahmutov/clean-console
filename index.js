@@ -11,7 +11,8 @@ var program = require('optimist')
     .options('input', {
         alias: 'i',
         string: true,
-        description: 'input url'
+        description: 'input url',
+        default: process.argv[2]
     })
     .options('phantomjs', {
         alias: 'p',
