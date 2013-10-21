@@ -32,6 +32,7 @@ var program = require('optimist')
     .argv;
 
 var check = require('./lib/check-console');
+
 check({
     url: program.input,
     phantomjs: program.phantomjs,
