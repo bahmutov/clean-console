@@ -24,11 +24,11 @@
   "gitHead": "983daf4827399a19ed85742927c0bf3775c47d5d",
   "readmeFilename": "README.md",
   "dependencies": {
-    "optimist": "~0.4.0",
-    "check-types": "~0.6.3"
+    "optimist": "~0.6.0",
+    "check-types": "~1.1.0"
   },
   "devDependencies": {
-    "gt": "~0.8.5",
+    "gt": "~0.8.16",
     "pre-git": "0.0.13"
   }
 }
