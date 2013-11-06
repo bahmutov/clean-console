@@ -8,6 +8,7 @@
     "test": "gt test/e2e.js",
     "basic": "node index.js -i examples/basic/index.html"
   },
+  "pre-commit": "npm test",
   "repository": {
     "type": "git",
     "url": "https://github.com/bahmutov/clean-console.git"
@@ -27,6 +28,7 @@
     "check-types": "~0.6.3"
   },
   "devDependencies": {
-    "gt": "~0.8.5"
+    "gt": "~0.8.5",
+    "pre-git": "0.0.13"
   }
 }
