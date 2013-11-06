@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "gt test/e2e.js",
+    "test": "node ./node_modules/gt test/e2e.js",
     "basic": "node index.js -i examples/basic/index.html"
   },
   "pre-commit": "npm test",
