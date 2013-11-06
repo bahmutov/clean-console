@@ -1,4 +1,14 @@
 
+0.0.5 / 2013-11-05
+==================
+
+  * added travis ci build
+  * added badges
+  * better npm test command
+  * added pre-git
+  * checking if url is a local file first, before assuming it is url, fixes #9
+  * supporting https://
+
 0.0.4 / 2013-10-21
 ==================
 
