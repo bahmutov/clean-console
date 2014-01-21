@@ -1,4 +1,9 @@
 
+0.1.0 / 2014-01-21 
+==================
+
+  * Good message if [phantomjs](http://phantomjs.org/) is not installed
+
 0.0.5 / 2013-11-05
 ==================
 
