@@ -17,4 +17,4 @@ gt.async('local file as default argument', 1, function () {
 gt.async('google', 1, function () {
     var url = 'http://google.com';
     gt.exec('node', [cc, url], 0, 'google is fine');
-}, 4000);
+}, 15000);
