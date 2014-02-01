@@ -1,4 +1,10 @@
 
+0.2.1 / 2014-02-01
+==================
+
+ * returns a promise, fixes #2, with unit tests, fixes #10
+ * updated pre-git, strict checking before push
+
 0.2.0 / 2014-02-01
 ==================
 
