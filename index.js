@@ -6,6 +6,12 @@ var info = package.name + ' - ' + package.description + '\n' +
     '  version: ' + package.version + '\n' +
     '  author: ' + JSON.stringify(package.author);
 
+var updateNotifier = require('update-notifier');
+var notifier = updateNotifier();
+if (notifier.update) {
+  notifier.notify();
+}
+
 var program = require('optimist')
     .usage(info)
     .options('input', {

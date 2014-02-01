@@ -8,7 +8,10 @@
     "test": "node ./node_modules/gt test/e2e.js",
     "basic": "node index.js -i examples/basic/index.html -o"
   },
-  "pre-commit": ["gulp", "npm test"],
+  "pre-commit": [
+    "gulp",
+    "npm test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bahmutov/clean-console.git"
@@ -26,7 +29,8 @@
   "dependencies": {
     "optimist": "0.6.0",
     "check-types": "1.1.1",
-    "console.json": "~0.1.1"
+    "console.json": "~0.1.1",
+    "update-notifier": "~0.1.7"
   },
   "devDependencies": {
     "gt": "0.8.33",
