@@ -29,7 +29,7 @@ var program = require('optimist')
     .options('timeout', {
         alias: 't',
         description: 'maximum timeout, seconds',
-        default: 10
+        default: 1
     })
     .demand(['input'])
     .argv;

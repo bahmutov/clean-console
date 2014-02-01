@@ -18,3 +18,9 @@ gt.async('google', 1, function () {
     var url = 'http://google.com';
     gt.exec('node', [cc, url], 0, 'google is fine');
 }, 15000);
+
+gt.async('with timeout', 1, function () {
+    var url = path.join(examples, 'timeout/index.html');
+    gt.exec('node', [cc, url, '--timeout', '10'], 1,
+      'page has error after a few seconds');
+}, 15000);
