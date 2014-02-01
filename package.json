@@ -8,7 +8,7 @@
     "test": "node ./node_modules/gt test/e2e.js",
     "basic": "node index.js -i examples/basic/index.html -o"
   },
-  "pre-commit": "npm test",
+  "pre-commit": ["gulp", "npm test"],
   "repository": {
     "type": "git",
     "url": "https://github.com/bahmutov/clean-console.git"
