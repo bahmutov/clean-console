@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<body>
+  This is example of a page where an error is thrown after 5 seconds.
+  <script>
+  setTimeout(function () {
+    console.log('throwing error after timeout');
+    throw new Error('Error after timeout');
+  }, 5000);
+  </script>
+</body>
+</html>

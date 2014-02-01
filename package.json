@@ -25,7 +25,8 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "optimist": "0.6.0",
-    "check-types": "1.1.1"
+    "check-types": "1.1.1",
+    "console.json": "~0.1.1"
   },
   "devDependencies": {
     "gt": "0.8.33",

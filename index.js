@@ -21,11 +21,13 @@ var program = require('optimist')
         default: 'phantomjs'
     })
     .options('verbose', {
+        alias: 'v',
         boolean: true,
         description: 'let phantomjs be verbose',
         default: false
     })
     .options('timeout', {
+        alias: 't',
         description: 'maximum timeout, seconds',
         default: 10
     })
