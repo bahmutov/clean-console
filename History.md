@@ -1,5 +1,14 @@
 
-0.1.0 / 2014-01-21 
+0.2.0 / 2014-02-01
+==================
+
+ * added update notifier, fixes #4
+ * running gulp on pre-commit
+ * running jshint using gulp, fixes #9
+ * using timeout in phantomjs runner, fixes #3
+ * parsing timeout argument to phantomjs runner
+
+0.1.0 / 2014-01-21
 ==================
 
   * Good message if [phantomjs](http://phantomjs.org/) is not installed
