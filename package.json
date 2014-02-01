@@ -12,6 +12,11 @@
     "gulp",
     "npm test"
   ],
+  "pre-push": [
+    "rm -rf node_modules",
+    "npm install",
+    "npm test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bahmutov/clean-console.git"
@@ -34,7 +39,7 @@
   },
   "devDependencies": {
     "gt": "0.8.33",
-    "pre-git": "0.0.13",
+    "pre-git": "0.0.15",
     "jshint-stylish": "~0.1.5",
     "gulp-jshint": "~1.3.4",
     "gulp": "~3.5.0"
