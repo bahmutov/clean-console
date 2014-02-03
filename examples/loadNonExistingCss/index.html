@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  This is example of a page trying to dynamically load CSS file that does not exist
+
+  <script>
+    var fileref=document.createElement("link");
+    fileref.setAttribute("rel", "stylesheet");
+    fileref.setAttribute("type", "text/css");
+    fileref.setAttribute("href", "does-not-exist.css");
+    document.getElementsByTagName("head")[0].appendChild(fileref);
+  </script>
+</body>
+</html>

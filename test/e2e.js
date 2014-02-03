@@ -30,3 +30,9 @@ gt.async('failed to load CSS', 1, function () {
     gt.exec('node', [cc, url, '--timeout', '10'], 1,
       'page has error if something could not be loaded');
 }, 15000);
+
+gt.async('failed to load CSS dynamically', 1, function () {
+    var url = path.join(examples, 'loadNonExistingCss/index.html');
+    gt.exec('node', [cc, url, '--timeout', '10'], 1,
+      'page has error if something could not be loaded');
+}, 15000);
