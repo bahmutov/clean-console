@@ -24,3 +24,9 @@ gt.async('with timeout', 1, function () {
     gt.exec('node', [cc, url, '--timeout', '10'], 1,
       'page has error after a few seconds');
 }, 15000);
+
+gt.async('failed to load CSS', 1, function () {
+    var url = path.join(examples, '404/index.html');
+    gt.exec('node', [cc, url, '--timeout', '10'], 1,
+      'page has error if something could not be loaded');
+}, 15000);
