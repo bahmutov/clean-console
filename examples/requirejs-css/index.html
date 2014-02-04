@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>requirejs-css</title>
+  <script src="require.min.js"></script>
+</head>
+<body>
+  <h1>Requirejs CSS example</h1>
+  <script>
+    require(["css!some.css"], function() {
+      console.log('loaded CSS');
+    });
+  </script>
+</body>
+</html>

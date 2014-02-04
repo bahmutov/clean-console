@@ -48,3 +48,9 @@ gt.async('requirejs text plugin', 1, function () {
     gt.exec('node', [cc, url, '--timeout', '3'], 0,
       'text file loaded');
 }, 5000);
+
+gt.async('requirejs css plugin', 1, function () {
+    var url = path.join(examples, 'requirejs-css/index.html');
+    gt.exec('node', [cc, url, '--timeout', '3'], 0,
+      'CSS file loaded');
+}, 5000);
