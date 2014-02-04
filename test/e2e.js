@@ -36,3 +36,9 @@ gt.async('failed to load CSS dynamically', 1, function () {
     gt.exec('node', [cc, url, '--timeout', '10'], 1,
       'page has error if something could not be loaded');
 }, 15000);
+
+gt.async('loading js using requirejs', 1, function () {
+    var url = path.join(examples, 'requirejs/index.html');
+    gt.exec('node', [cc, url, '--timeout', '5'], 1,
+      'page has error if something could not be loaded');
+}, 15000);
