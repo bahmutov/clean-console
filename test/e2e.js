@@ -42,3 +42,9 @@ gt.async('loading js using requirejs', 1, function () {
     gt.exec('node', [cc, url, '--timeout', '5'], 1,
       'page has error if something could not be loaded');
 }, 15000);
+
+gt.async('requirejs text plugin', 1, function () {
+    var url = path.join(examples, 'requirejs-text/index.html');
+    gt.exec('node', [cc, url, '--timeout', '3'], 0,
+      'text file loaded');
+}, 5000);

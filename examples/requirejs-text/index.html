@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error in requirejs</title>
+  <script src="require.min.js"></script>
+</head>
+<body>
+  <h1>Requirejs example</h1>
+  <script>
+    require(["text!text.txt"], function(text) {
+      console.assert(text.trim() === 'text file',
+        'incorrect loaded text ' + text);
+    });
+  </script>
+</body>
+</html>
