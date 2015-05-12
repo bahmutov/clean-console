@@ -12,7 +12,8 @@
   },
   "pre-commit": [
     "gulp",
-    "npm test"
+    "npm test",
+    "npm version"
   ],
   "pre-push": [
     "rm -rf node_modules",
@@ -35,16 +36,16 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "check-types": "1.4.0",
-    "console.json": "0.1.2",
+    "console.json": "0.2.1",
     "optimist": "0.6.1",
-    "q": "2.0.2",
+    "q": "2.0.3",
     "update-notifier": "0.1.10"
   },
   "devDependencies": {
     "gt": "0.8.47",
-    "gulp": "3.8.10",
-    "gulp-jshint": "1.9.0",
-    "jshint-stylish": "1.0.0",
-    "pre-git": "0.1.1"
+    "gulp": "3.8.11",
+    "gulp-jshint": "1.10.0",
+    "jshint-stylish": "1.0.2",
+    "pre-git": "0.2.1"
   }
 }
