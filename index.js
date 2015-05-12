@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var check = require('./lib/check-console');
+var quote = require('quote');
 
 if (module.parent) {
     module.exports = check;
@@ -41,6 +42,11 @@ if (module.parent) {
             description: 'maximum timeout, seconds',
             default: 1
         })
+        .options('expect', {
+            alias: 'e',
+            description: 'number of expeced errors',
+            default: 0
+        })
         .demand(['input'])
         .argv;
 
@@ -48,14 +54,24 @@ if (module.parent) {
         url: program.input,
         phantomjs: program.phantomjs,
         verbose: program.verbose,
-        timeout: program.timeout
+        timeout: program.timeout,
+        expect: program.expect
     })
     .then(function (code) {
-        process.exit(code);
+        if (program.expect) {
+            if (code !== program.expect) {
+                console.error('Expected exit code', program.expect, 'got', code);
+                process.exit(-1);
+            } else {
+                process.exit(0);
+            }
+        } else {
+            process.exit(code);
+        }
     })
-    .fail(function (error) {
+    .catch(function (error) {
         console.error(error);
-        console.error('is phantomjs "' + phantomjs + '" installed?');
+        console.error('is phantomjs', quote(program.phantomjs), 'installed?');
         process.exit(-1);
     })
     .done();

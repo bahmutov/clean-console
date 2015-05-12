@@ -9,6 +9,12 @@ gt.async('local file', 1, function () {
     gt.exec('node', [cc, '--input', url], 2, 'basic page with 2 errors');
 }, 4000);
 
+gt.async('local file with expected number of errors', 1, function () {
+    var url = path.join(examples, 'basic/index.html');
+    gt.exec('node', [cc, '--input', url, '--expect', 2], 0,
+      'basic page with 2 expected errors');
+}, 4000);
+
 gt.async('local file as default argument', 1, function () {
     var url = path.join(examples, 'basic/index.html');
     gt.exec('node', [cc, url], 2, 'basic page with 2 errors');
