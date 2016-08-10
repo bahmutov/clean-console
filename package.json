@@ -3,7 +3,15 @@
   "version": "0.0.0-semantic-release",
   "description": "Quickly loads remote url in phantomjs to check of JavaScript console errors",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "clean-console": "index.js"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "History.md",
+    "lib"
+  ],
   "scripts": {
     "pretest": "gulp",
     "test": "npm run unit",
@@ -12,7 +20,8 @@
     "unit": "gt test/test.js",
     "e2e": "gt test/e2e.js --output",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "commit": "commit-wizard"
+    "commit": "commit-wizard",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
@@ -50,7 +59,9 @@
       "pre-commit": [
         "npm test"
       ],
-      "pre-push": [],
+      "pre-push": [
+        "npm run size"
+      ],
       "post-commit": [],
       "post-checkout": [],
       "post-merge": []
