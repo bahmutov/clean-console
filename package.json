@@ -41,6 +41,7 @@
     "check-types": "1.4.0",
     "console.json": "0.2.1",
     "optimist": "0.6.1",
+    "phantomjs-prebuilt": "2.1.11",
     "q": "2.0.3",
     "quote": "0.4.0",
     "update-notifier": "0.1.10"
