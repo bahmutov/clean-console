@@ -32,6 +32,11 @@ is to wrap assertions into helper method:
         }
     }
 
+### Update
+
+Seems the latest PhantomJs 2 generates errors when using `console.error`
+and `console.assert` by default.
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2013
