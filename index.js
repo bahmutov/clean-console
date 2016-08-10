@@ -1,18 +1,20 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var check = require('./lib/check-console');
 var quote = require('quote');
 
 if (module.parent) {
     module.exports = check;
 } else {
-    var package = require('./package.json');
-    var info = package.name + ' - ' + package.description + '\n' +
-        '  version: ' + package.version + '\n' +
-        '  author: ' + JSON.stringify(package.author);
+    var pkg = require('./package.json');
+    var info = pkg.name + ' - ' + pkg.description + '\n' +
+        '  version: ' + pkg.version + '\n' +
+        '  author: ' + JSON.stringify(pkg.author);
 
     var updateNotifier = require('update-notifier');
-    var notifier = updateNotifier();
+    var notifier = updateNotifier({pkg: pkg});
     if (notifier.update) {
       notifier.notify();
     }
