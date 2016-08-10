@@ -5,7 +5,7 @@ var cc = path.join(__dirname, '../index.js');
 var examples = path.join(__dirname, '../examples');
 
 var timeout = 10000;
-var longTimeout = 15000;
+var longTimeout = 25000;
 
 gt.async('local file', 1, function () {
     var url = path.join(examples, 'basic/index.html');
