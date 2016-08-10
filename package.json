@@ -1,6 +1,6 @@
 {
   "name": "clean-console",
-  "version": "0.0.0-semantic-release",
+  "version": "0.4.0",
   "description": "Quickly loads remote url in phantomjs to check of JavaScript console errors",
   "main": "index.js",
   "bin": {
