@@ -1,6 +1,6 @@
 {
   "name": "clean-console",
-  "version": "0.3.0",
+  "version": "0.0.0-semantic-release",
   "description": "Quickly loads remote url in phantomjs to check of JavaScript console errors",
   "main": "index.js",
   "bin": "index.js",
@@ -8,7 +8,8 @@
     "test": "gulp && npm run unit && npm run e2e",
     "basic": "node index.js -i examples/basic/index.html -o",
     "unit": "gt test/test.js",
-    "e2e": "gt test/e2e.js --output"
+    "e2e": "gt test/e2e.js --output",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "pre-commit": [
     "gulp",
@@ -47,6 +48,7 @@
     "gulp": "3.8.11",
     "gulp-jshint": "1.10.0",
     "jshint-stylish": "1.0.2",
-    "pre-git": "0.2.1"
+    "pre-git": "0.2.1",
+    "semantic-release": "^4.3.5"
   }
 }
