@@ -11,11 +11,11 @@ gt.async('basic', function () {
   check({
     url: url
   }).then(function (code) {
-    gt.equal(code, 2, 'there should be two errors');
+    gt.equal(code, 4, 'there should be four errors');
   }).finally(function () {
     gt.start();
   });
-}, 5000);
+}, 10000);
 
 gt.async('async_error', function () {
   var url = join(examples, 'timeout/index.html');

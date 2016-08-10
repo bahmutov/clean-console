@@ -38,7 +38,7 @@
   "gitHead": "983daf4827399a19ed85742927c0bf3775c47d5d",
   "readmeFilename": "README.md",
   "dependencies": {
-    "check-types": "1.4.0",
+    "check-more-types": "2.22.0",
     "console.json": "0.2.1",
     "optimist": "0.6.1",
     "phantomjs-prebuilt": "2.1.11",
