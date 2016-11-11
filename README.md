@@ -3,8 +3,7 @@
 Quickly loads a remote page using [phantomjs](http://phantomjs.org/)
 to check if there are any JavaScript console errors.
 
-[![NPM][clean-console-icon] ][clean-console-url]
-
+[![npm version](https://badge.fury.io/js/clean-console.svg)](https://badge.fury.io/js/clean-console)
 [![Build status][clean-console-ci-image] ][clean-console-ci-url]
 [![dependencies][clean-console-dependencies-image] ][clean-console-dependencies-url]
 [![devdependencies][clean-console-devdependencies-image] ][clean-console-devdependencies-url]
